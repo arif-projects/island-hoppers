@@ -1,0 +1,13 @@
+.team-image img{
+    width: 400px;
+    height: 280px;
+    border-radius: 360px;
+}
+
+.team-description{
+    color: gray;
+}
+
+.team-name{
+    color: rgb(226, 106, 58);
+}

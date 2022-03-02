@@ -1,0 +1,48 @@
+.banner{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: url(../../images/background.jpg)no-repeat center;
+    background-size: cover;
+    height: 600px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.banner-container{
+    margin-top: 100px;
+}
+
+.banner-header{
+    color: white;
+    font-size: 55px;
+    font-weight: 800;
+}
+
+span{
+    color: #ff9f1c;
+}
+.banner-description{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    /* margin-top: -20px; */
+    margin-bottom: 50px;
+}
+
+.book-btn{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:#ff9f1c;
+    padding: 15px 40px;
+    border: 2px solid #ff9f1c;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.book-btn:hover{
+    background: none;
+}
+
