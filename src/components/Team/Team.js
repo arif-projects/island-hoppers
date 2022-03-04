@@ -10,7 +10,7 @@ const Team = () => {
             <div className="team">
                 <h1 className = "about-header my-5">Professional Team</h1>
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-4 team-container">
                         <div className="team-image">
                           <img src={t1} alt="" />
                         </div>

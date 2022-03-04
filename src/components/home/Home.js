@@ -2,14 +2,14 @@ import React from 'react';
 import About from '../About/About';
 import Banner from '../Banner/Banner';
 import Footer from '../Footer/Footer';
-import Navber from '../navber/Navber';
+import Services from '../Services/Services';
 import Team from '../Team/Team';
 
 const home = () => {
     return (
-        <div>
-            <Navber></Navber>
+        <div id = "home">
             <Banner></Banner>
+            <Services></Services>
             <About></About>
             <Team></Team>
             <Footer></Footer>

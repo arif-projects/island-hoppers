@@ -1,7 +1,33 @@
-.footer{
+.footer-container{
+    background-color:rgb(32, 52, 117);
     padding: 30px;
-    background-color: gray;
     color: white;
-    font-size: 18px;
-    font-weight: 600;
 }
+
+
+.items{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 3px 7px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.items:hover{
+    color: blue;
+}
+
+.link Link{
+    text-decoration: none;
+}
+
+.nav-element{
+    text-decoration: none;
+}
+
+
+
