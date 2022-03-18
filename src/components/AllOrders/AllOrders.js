@@ -1,23 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useEffect } from 'react';
+import { useState } from 'react';
 import { Table } from 'react-bootstrap';
-import UseAuth from '../../Hooks/UseAuth';
 
-const MyOrders = () => {
+const AllOrders = () => {
     const [orders,setOrders] = useState([]);
-    const{users} = UseAuth();
-
     useEffect(()=>{
-        fetch('https://islandhoppers.herokuapp.com/purchese')
+        fetch('http://localhost:5000/purchese')
         .then(res=>res.json())
-        .then(data=>{
-const order = data.filter(singleData=> users.email==singleData.customerEmail);
-            setOrders(order);
-        })
+        .then(data=>setOrders(data))
     },[])
-
+    // console.log(orders);
+ 
     return (
-        <div>
-            <h2>All my Orders</h2>
+        <div className = "mt-5 mb-3">
+            <h3 className = "text text-primary">All Orders :{orders.length}</h3>
             <div className="container">
             <Table striped bordered hover>
   <thead>
@@ -47,4 +44,4 @@ const order = data.filter(singleData=> users.email==singleData.customerEmail);
     );
 };
 
-export default MyOrders;
+export default AllOrders;

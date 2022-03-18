@@ -24,9 +24,10 @@ const navber = () => {
       {
         users?.email?
        <>
-        <Button onClick = {logOut} variant="light">LogOut</Button>
         <Nav.Link as = {Link} to ="/addService">Add Service</Nav.Link>
         <Nav.Link as = {Link} to ="/manageServices">Manage Service</Nav.Link>
+        <Nav.Link as = {Link} to ="/allOrders">All Orders</Nav.Link>
+        <Button onClick = {logOut} variant="light">LogOut</Button>
        </>:
         <Nav.Link as = {Link} to ="/login">LogIn</Nav.Link>
       }
