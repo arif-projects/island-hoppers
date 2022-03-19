@@ -1,14 +1,20 @@
 import React from 'react';
 import './Banner.css'
+import video from '../../video/video.mp4'
 
 const Banner = () => {
     return (
-        <div className = "banner">
-            <div className="banner-container">
-            <h1 className = "banner-header">Enjoy Vacation With <span>I-Hoppers</span></h1> 
-            <p className = "banner-description">Travel to the any corner of the world, without going around in circles.</p>
-           <a className = "book-btn" href="#">Book A Tour</a>
-            </div>
+        <div className = "banner-conatiner">
+          <div className="banner">
+          <video autoPlay loop muted playsInline className = "bgVideo">
+                <source src={video} type="video/mp4" />
+            </video>
+              <div className="content">
+                  <h1>Island Hoppers</h1>
+                  <a href="#service">Explore</a>
+              </div>
+          </div>  
+
            
         </div>
     );

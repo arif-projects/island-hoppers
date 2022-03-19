@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import { useForm } from "react-hook-form";
+import swal from 'sweetalert';
 import './AddService.css'
 
 
@@ -13,13 +14,16 @@ const AddService = () => {
     .then(res=>{
         // console.log(res);
         if(res.data.insertedId){
-            alert('Service added successfully.');
+            swal({
+                title: "Service Added Successfully!",
+                icon: "success",
+              });
             reset();
         }
     })
     return (
-        <div className = "addService">
-            <h1>Add a service.</h1>
+        <div className = "addService mt-5">
+            <h2 className = "text text-primary  mb-3">Add a service.</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
             <input {...register("name", { required: true, maxLength: 20 })} placeholder = "Name" />
             <textarea {...register("description")} placeholder = "Description" />

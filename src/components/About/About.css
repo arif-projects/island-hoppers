@@ -1,3 +1,6 @@
+.about-img{
+    margin-right: 30px;
+}
 .about-img img{
     width: 500px;
     height: 300px;
@@ -8,22 +11,11 @@
     font-weight: 700;
 }
 
-.about-btn{
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-    background-color:#ff9f1c;
-    padding: 10px 20px;
-    border: 2px solid #ff9f1c;
-    border-radius: 10px;
-    transition: .5s;
 
-}
 
 .about-description {
     max-width: 500px;
-    text-align: justify;
+
 }
 
 .description-header{

@@ -1,48 +1,69 @@
-.banner{
+.banner-conatiner{
     margin: 0;
     padding: 0;
-    position: relative;
-    background: url(../../images/background.jpg)no-repeat center;
-    background-size: cover;
-    height: 600px;
-    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position:relative;
+    padding: 0 5%;
+    display: flex;
     align-items: center;
+    justify-content: center;
+
 }
 
-.banner-container{
-    margin-top: 100px;
+.content{
+    text-align: center;
 }
 
-.banner-header{
+.content h1{
+    font-size: 130px;
     color: white;
-    font-size: 55px;
-    font-weight: 800;
-}
-
-span{
-    color: #ff9f1c;
-}
-.banner-description{
-    color: white;
-    font-size: 18px;
     font-weight: 600;
-    /* margin-top: -20px; */
-    margin-bottom: 50px;
+    transition: 0.5s;
+}
+.content h1:hover{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
 }
 
-.book-btn{
+.content a{
     text-decoration: none;
+    display: inline-block;
     color: white;
-    font-size: 18px;
-    font-weight: 600;
-    background-color:#ff9f1c;
-    padding: 15px 40px;
-    border: 2px solid #ff9f1c;
-    border-radius: 30px;
-    transition: .5s;
+    font-size: 24px;
+    border: 2px solid white;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
 }
 
-.book-btn:hover{
-    background: none;
+.content a:hover{
+    background-color: white;
+    color: black;
 }
 
+.bgVideo{
+    position: absolute;
+    
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .bgVideo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .bgVideo{
+        width: auto;
+        height: 100%;
+    }
+}

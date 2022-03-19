@@ -18,7 +18,7 @@ const navber = () => {
       <Navbar.Toggle />
       <Navbar.Collapse className="justify-content-end">
       <Nav.Link as = {HashLink} to ="/home#home">Home</Nav.Link>
-      <Nav.Link as = {HashLink} to ="/home#about">About</Nav.Link>
+      {/* <Nav.Link as = {HashLink} to ="/home#about">About</Nav.Link> */}
       <Nav.Link as = {HashLink} to ="/home#service">Services</Nav.Link>
       <Nav.Link as = {HashLink} to ="/home#team">Team</Nav.Link>
       {
@@ -27,13 +27,15 @@ const navber = () => {
         <Nav.Link as = {Link} to ="/addService">Add Service</Nav.Link>
         <Nav.Link as = {Link} to ="/manageServices">Manage Service</Nav.Link>
         <Nav.Link as = {Link} to ="/allOrders">All Orders</Nav.Link>
-        <Button onClick = {logOut} variant="light">LogOut</Button>
+        <Nav.Link as = {Link} to ="/orders">My Orders</Nav.Link>
+        <Navbar.Text>
+       <a href="#login">{users?.displayName}</a>
+      </Navbar.Text>
+        <Button onClick = {logOut} variant="primary">LogOut</Button>
        </>:
         <Nav.Link as = {Link} to ="/login">LogIn</Nav.Link>
       }
-      <Navbar.Text>
-        Signed in as: <a href="#login">{users?.displayName}</a>
-      </Navbar.Text>
+      
     </Navbar.Collapse>
     </Container>
   </Navbar>

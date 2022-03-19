@@ -1,5 +1,11 @@
 .service{
     border: 0.5px solid lightgray;
+    transition: .5s;
+}
+
+.service:hover{
+    box-shadow: 5px 5px 5px 5px #888888;
+    border: none;
 }
 
 .apply{

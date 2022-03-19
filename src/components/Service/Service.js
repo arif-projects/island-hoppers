@@ -8,11 +8,11 @@ const Service = (props) => {
         <div>
             <div className="service pb-3">
                 <img className="w-100" src={img} alt="" />
-                <h3>{name}</h3>
+                <h3 className="about-header">{name}</h3>
                 <p className = "description">{description}</p>
                 <p className = "price">${price}</p>
                 <Link to = {`/purchese/${_id}`}>
-                <button className = "apply">Apply booking</button>
+                <button className = "btn btn-success">Apply booking</button>
                 </Link>
                 
             </div>

@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Home from './components/home/Home';
 import NotFound from './components/NotFound/NotFound';
@@ -16,6 +15,7 @@ import AddService from './components/AddService/AddService';
 import ManageServices from './components/ManageServices.js/ManageServices';
 import MyOrders from './components/MyOders/MyOrders';
 import AllOrders from './components/AllOrders/AllOrders';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -65,6 +65,7 @@ function App() {
           </Route>
 
         </Switch>
+         <Footer></Footer>
       </Router>
 
       </AuthProvider>
